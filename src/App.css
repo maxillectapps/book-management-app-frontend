@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* General table styling */
+table {
+  width: 100%;
+  border-collapse: collapse; /* Make sure the borders do not have spacing between them */
+  margin: 20px 0;
+}
+
+/* Border for the entire table */
+table,
+table th,
+table td {
+  border: 1px solid #ccc; /* Gray border */
+}
+
+/* Table header styling */
+table th {
+  background-color: #f4f4f4; /* Light gray background for headers */
+  padding: 10px;
+  text-align: center;
+}
+
+/* Table body cell styling */
+table td {
+  padding: 10px;
+}
+
+/* Optional: Add hover effect for table rows */
+table tbody tr:hover {
+  background-color: #f9f9f9; /* Slightly darker background on hover */
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover state */
+button:hover {
+  background-color: #0056b3; /* Darker blue for hover */
+}
+
+/* Button active state (when clicked) */
+button:active {
+  transform: scale(0.98); /* Slightly reduce button size for active state */
+  background-color: #004494; /* Even darker blue */
+}
+
+/* Disabled button state */
+button:disabled {
+  background-color: #b0b0b0;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 15px;
+  margin-top: 40px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  display: flex;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Search bar focus state */
+.search-bar:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Placeholder styling */
+.search-bar::placeholder {
+  color: #aaa;
+  opacity: 1;
+}
